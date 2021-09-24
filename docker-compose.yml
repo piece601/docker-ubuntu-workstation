@@ -1,4 +1,4 @@
-version: '3'
+version: '3.9'
 
 services:
     workstation:
@@ -9,4 +9,6 @@ services:
         volumes:
             # 設定時區與本機時區相同
             - /etc/localtime:/etc/localtime:ro
-            - ./root:/root
+            - .:/root/workstation
+            - ~/.gitconfig:/root/.gitconfig:ro
+            - ~/.ssh:/root/.ssh:ro
