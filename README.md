@@ -1,6 +1,7 @@
 # docker-ubuntu-workstation
-This is workstation for container in docker
 這是一個任何 OS 值要能執行 docker 的地方，就可以使用 ubuntu 當作開發環精
+This is workstation for container in docker
+
 
 ## 內容工具
   - git 版本控制
