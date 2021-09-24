@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    workstation:
+        build:
+            context: ./
+        container_name: workstation
+        hostname: workstation
+        volumes:
+            # 設定時區與本機時區相同
+            - /etc/localtime:/etc/localtime:ro
