@@ -9,3 +9,4 @@ services:
         volumes:
             # 設定時區與本機時區相同
             - /etc/localtime:/etc/localtime:ro
+            - ./root:/root
