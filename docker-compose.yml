@@ -6,8 +6,6 @@ services:
             context: ./
         container_name: workstation
         hostname: workstation
-        # 設定網路為 host
-        network_mode: host
         volumes:
             # 設定時區與本機時區相同
             - /etc/localtime:/etc/localtime:ro
