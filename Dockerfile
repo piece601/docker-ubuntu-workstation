@@ -10,7 +10,10 @@ RUN apt -y upgrade
 RUN apt -y install coreutils traceroute net-tools iputils-ping dnsutils htop
 
 # 安裝開發工具
-RUN apt -y install zsh vim git curl telnet ack wget php
+RUN apt -y install zsh vim git curl telnet ack wget tmux php
+
+# 安裝中文
+RUN apt -y install language-pack-zh-hant language-pack-zh-hans
 
 # 安裝 nvm
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
